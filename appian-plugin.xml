@@ -1,0 +1,18 @@
+<appian-plugin name="com.appian.plugins.export_sql_to_excel" key="com.appian.plugins.export_sql_to_excel">
+
+  <plugin-info>
+    <description>com.appian.plugins.export_sql_to_excel</description>
+    <vendor name="Millennium" url="https://www.mlp.com" />
+    <version>1.0.1</version>
+    <application-version min="7.5.0" />
+    <bundle-instructions>
+      <DynamicImport-Package>META-INF.services,*;resolution:=optional</DynamicImport-Package>
+    </bundle-instructions>
+  </plugin-info>
+  <servlet name="Export SQL to Excel" key="exportSQLToExcel" class="com.appian.plugins.export_sql_to_excel.exportSQLToExcel">
+    <description>
+      Servlet that takes a SQL query and sends an Excel file back to the browser.
+    </description>
+    <url-pattern>/exportSQLToExcel</url-pattern>
+  </servlet>
+</appian-plugin>
